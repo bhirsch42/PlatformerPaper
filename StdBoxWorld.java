@@ -8,37 +8,48 @@ import org.jbox2d.profile.*;
 
 public class StdBoxWorld extends World {
 
-	public Body createPolygon(Vec2[] points, StdBoxPolygon userData) {
+	public StdBoxWorld(Vec2 gravity) {
+		super(gravity);
+	}
+
+	public Body createBody(StdBoxBody stdBoxBody) {
 		BodyDef bd = new BodyDef();
-		Body body = new Body(bd, this);
-
-		// define body
+		bd.userData = stdBoxBody;
 		bd.active = true;
-		bd.angle = 0.0f;
-		bd.angularDamping = 0.0f;
-		bd.angularVelocity = 0.0f;
-		bd.fixedRotation = false;
-		bd.linearDamping = 0.0f;
-		bd.linearVelocity = new Vec2(0.0f, 0.0f);
-		bd.position = new Vec2(0.0f, 0.0f);
-		bd.type = BodyType.DYNAMIC;
 
-		// fixture
-		PolygonShape poly = new PolygonShape();
-		poly.m_vertices = points;
-		body.createFixture(poly, 1.0f);
-		body.m_userData = userData.setBody(body);
+		Body body = this.createBody(bd);
+		stdBoxBody.setBody(body);
 
 		return body;
+	}
 
+	public boolean pointIsInsideBody(Vec2 point) {
+		Body body = this.getBodyList();
+		for (int i = 0; i < this.getBodyCount(); i++) {
+			PolygonShape shape = (PolygonShape)(body.getFixtureList().getShape());
+			if (shape.testPoint(new Transform(body.getTransform()), new Vec2(point))) {
+				return true;
+			}
+			body = body.getNext();
+		}
+		return false;
 	}
 
 
-	public void update() {
-
+	public void update(double delta) {
+		this.step(1.0f/60.0f, 10, 10);
+		Body body = this.getBodyList();
+		for (int i = 0; i < this.getBodyCount(); i++) {
+			((StdBoxBody)(body.getUserData())).update(delta);
+			body = body.getNext();
+		}
 	}
 
 	public void render() {
-
+		Body body = this.getBodyList();
+		for (int i = 0; i < this.getBodyCount(); i++) {
+			((StdBoxBody)(body.getUserData())).render();
+			body = body.getNext();
+		}
 	}
 }
