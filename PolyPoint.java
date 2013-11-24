@@ -10,6 +10,10 @@ public class PolyPoint {
 		yList = new ArrayList<Float>();
 	}
 
+	public int size() {
+		return xList.size();
+	}
+
 	public void addPoint(int x, int y) {
 		xList.add((float)x);
 		yList.add((float)y);
@@ -57,21 +61,22 @@ public class PolyPoint {
 		String pic = args[0];
 		int width = 800;
 		int height = 600;
-		StdDraw.setCanvasSize(width, height);
+		StdDraw.setCanvasSize(1900, 900);
 		StdDraw.setXscale(0, width);
 		StdDraw.setYscale(height, 0);
 
 		ArrayList<PolyPoint> polyPoints = new ArrayList<PolyPoint>();
 
 		boolean mouseWasPressed = false;
-		boolean keyWasTyped = false;
+		boolean keySpaceWasTyped = false;
+		boolean keyZWasPressed = false;
 		PolyPoint polyPoint = new PolyPoint();
 
 		while(true) {
 			// render
 			StdDraw.show(30);
 			StdDraw.clear();
-			StdDraw.picture(width/2, height/2, pic);
+			StdDraw.picture(width/2, height/2, pic, width, height);
 			for (PolyPoint p : polyPoints) {
 				p.draw();
 			}
@@ -85,15 +90,27 @@ public class PolyPoint {
 			if (!StdDraw.mousePressed()) {
 				mouseWasPressed = false;
 			}
-			if (StdDraw.isKeyPressed(32) && !keyWasTyped) {
-				keyWasTyped = true;
-				// pressed a key
+			if (StdDraw.isKeyPressed(32) && !keySpaceWasTyped) {
+				keySpaceWasTyped = true;
+				// pressed space key
 				polyPoints.add(polyPoint);
 				polyPoint = new PolyPoint();
 				printAllPoints(polyPoints);
 			}
 			if (!StdDraw.isKeyPressed(32)) {
-				keyWasTyped = false;
+				keySpaceWasTyped = false;
+			}
+			if (StdDraw.isKeyPressed(90) && !keyZWasPressed) {
+				keyZWasPressed = true;
+				// pressed Z key
+				if (polyPoint.size() > 0) {
+					polyPoint = new PolyPoint();
+				} else if (polyPoints.size() > 0) {
+					polyPoints.remove(polyPoints.size()-1);
+				}
+			}
+			if (!StdDraw.isKeyPressed(90)) {
+				keyZWasPressed = false;
 			}
 		}
 
