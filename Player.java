@@ -37,6 +37,9 @@ public class Player extends StdBoxPolygon {
 		Vec2 groundPointCenter = new Vec2(center.x, lowest + 2.0f);
 		Vec2 groundPointLeft = new Vec2(leftest, lowest + 2.0f);
 		Vec2 groundPointRight = new Vec2(rightest, lowest + 2.0f);
+		StdDraw.setPenColor(StdDraw.RED);
+		StdDraw.circle(groundPointCenter.x, groundPointCenter.y, 1.0);
+		StdDraw.setPenColor(StdDraw.BLACK);
 		return world.pointIsInsideBody(groundPointCenter) ||
 			world.pointIsInsideBody(groundPointLeft) ||
 			world.pointIsInsideBody(groundPointRight);

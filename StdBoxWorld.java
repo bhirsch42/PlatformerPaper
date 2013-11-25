@@ -26,7 +26,7 @@ public class StdBoxWorld extends World {
 	public boolean pointIsInsideBody(Vec2 point) {
 		Body body = this.getBodyList();
 		for (int i = 0; i < this.getBodyCount(); i++) {
-			PolygonShape shape = (PolygonShape)(body.getFixtureList().getShape());
+			Shape shape = (body.getFixtureList().getShape());
 			if (shape.testPoint(new Transform(body.getTransform()), new Vec2(point))) {
 				return true;
 			}

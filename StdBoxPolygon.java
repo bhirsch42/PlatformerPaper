@@ -41,9 +41,6 @@ public class StdBoxPolygon extends StdBoxBody {
 		for (int i = 0; i < ans.length; i++) {
 			ans[i] = body.getWorldPoint(shape.getVertices()[i]);
 		}
-		// System.out.println(ans[0].x + ", " + ans[1].y);
-		// System.out.println(ans[2] + "\t" + super.getPoints()[0]);
-		// System.out.println(body.getAngle());
 		return ans;
 	}
 

@@ -51,8 +51,8 @@ public class PolyPoint {
 		System.out.println("***");
 		for (int i = 0; i < polyPoints.size(); i++) {
 			PolyPoint polyPoint = polyPoints.get(i);
-			System.out.println("Vec2[] p" + (i+8) + " = " + polyPoint);
-			System.out.println("world.createBody(new StdBoxPlatform(p" + (i+8) + "));");
+			System.out.println("Vec2[] p" + (i) + " = " + polyPoint);
+			System.out.println("this.createBody(new StdBoxPlatform(p" + (i) + "));");
 			System.out.println();
 		}
 	}
@@ -61,7 +61,7 @@ public class PolyPoint {
 		String pic = args[0];
 		int width = 800;
 		int height = 600;
-		StdDraw.setCanvasSize(1900, 900);
+		StdDraw.setCanvasSize(width, height);
 		StdDraw.setXscale(0, width);
 		StdDraw.setYscale(height, 0);
 
@@ -76,7 +76,7 @@ public class PolyPoint {
 			// render
 			StdDraw.show(30);
 			StdDraw.clear();
-			StdDraw.picture(width/2, height/2, pic, width, height);
+			StdDraw.picture(width/2, height/2, pic);//, width, height);
 			for (PolyPoint p : polyPoints) {
 				p.draw();
 			}
