@@ -60,7 +60,7 @@ public class Player extends StdBoxPolygon {
 		if (isTouchingGround()) {
 			force = 3000.0f;
 		}
-		float jump = 400000.0f;
+		float jump = 800000.0f;
 		if (canMove) {
 			// if (StdDraw.isKeyPressed(83)) { // S
 			// 	if (linVel.y < speed) {

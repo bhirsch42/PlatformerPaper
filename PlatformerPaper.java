@@ -15,7 +15,7 @@ public class PlatformerPaper {
 	public static void initialize() {
 		// init canvas
 		int width = 800;
-		int height = 600;
+		int height = 800;
 		StdDraw.setCanvasSize(width, height);
 		StdDraw.setXscale(0, width);
 		StdDraw.setYscale(height, 0);
@@ -24,13 +24,19 @@ public class PlatformerPaper {
 		frc = new FrameRateCounter();
 
 		// init world
-		world = new Level1(new Vec2(0.0f, 40.0f));
+		world = new Level2(new Vec2(0.0f, 40.0f));
 
 	}
 
 	public static void update(double delta) {
 		frc.addFrame();
 		world.update(delta);
+		if (StdDraw.isKeyPressed(37)) { // <--
+			world = new Level1(new Vec2(0.0f, 40.0f));
+		}
+		if (StdDraw.isKeyPressed(39)) { // <--
+			world = new Level2(new Vec2(0.0f, 40.0f));
+		}
 	}
 
 	public static void render() {
@@ -47,8 +53,8 @@ public class PlatformerPaper {
 		Stopwatch stopwatch = new Stopwatch();
 		while (running) {
 			update(stopwatch.elapsedTime());
-			render();
 			stopwatch = new Stopwatch();
+			render();
 		}
 
 

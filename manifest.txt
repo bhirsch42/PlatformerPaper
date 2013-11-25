@@ -1,0 +1,2 @@
+Main-Class: PlatformerPaper
+Class-Path: stdlib jbox2d

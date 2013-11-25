@@ -60,7 +60,7 @@ public class PolyPoint {
 	public static void main(String[] args) {
 		String pic = args[0];
 		int width = 800;
-		int height = 600;
+		int height = 800;
 		StdDraw.setCanvasSize(width, height);
 		StdDraw.setXscale(0, width);
 		StdDraw.setYscale(height, 0);
@@ -71,7 +71,7 @@ public class PolyPoint {
 		boolean keySpaceWasTyped = false;
 		boolean keyZWasPressed = false;
 		PolyPoint polyPoint = new PolyPoint();
-
+		StdDraw.setPenColor(StdDraw.GREEN);
 		while(true) {
 			// render
 			StdDraw.show(30);
