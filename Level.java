@@ -112,9 +112,11 @@ public class Level extends StdBoxWorld {
 		}
 
 		// render player
+		StdDraw.setPenColor(playerColor);
 		player.render();
 
 		// render platforms
+		StdDraw.setPenColor(platformColor);
 		if (showPlatforms) {
 			super.render();
 		}

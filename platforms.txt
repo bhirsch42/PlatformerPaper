@@ -1,34 +1,4 @@
 ***
-Vec2[] p0 = {new Vec2(49.0f, 558.0f), new Vec2(850.0f, 558.0f), new Vec2(868.0f, 664.0f), new Vec2(32.0f, 659.0f)};
+Vec2[] p0 = {new Vec2(517.0f, 446.0f)};
 this.createBody(new StdBoxPlatform(p0));
-
-***
-Vec2[] p0 = {new Vec2(49.0f, 558.0f), new Vec2(850.0f, 558.0f), new Vec2(868.0f, 664.0f), new Vec2(32.0f, 659.0f)};
-this.createBody(new StdBoxPlatform(p0));
-
-Vec2[] p1 = {new Vec2(53.0f, 648.0f), new Vec2(56.0f, 25.0f), new Vec2(28.0f, 31.0f), new Vec2(22.0f, 638.0f)};
-this.createBody(new StdBoxPlatform(p1));
-
-***
-Vec2[] p0 = {new Vec2(49.0f, 558.0f), new Vec2(850.0f, 558.0f), new Vec2(868.0f, 664.0f), new Vec2(32.0f, 659.0f)};
-this.createBody(new StdBoxPlatform(p0));
-
-Vec2[] p1 = {new Vec2(53.0f, 648.0f), new Vec2(56.0f, 25.0f), new Vec2(28.0f, 31.0f), new Vec2(22.0f, 638.0f)};
-this.createBody(new StdBoxPlatform(p1));
-
-Vec2[] p2 = {new Vec2(849.0f, 652.0f), new Vec2(819.0f, 20.0f), new Vec2(845.0f, 26.0f), new Vec2(870.0f, 651.0f)};
-this.createBody(new StdBoxPlatform(p2));
-
-***
-Vec2[] p0 = {new Vec2(49.0f, 558.0f), new Vec2(850.0f, 558.0f), new Vec2(868.0f, 664.0f), new Vec2(32.0f, 659.0f)};
-this.createBody(new StdBoxPlatform(p0));
-
-Vec2[] p1 = {new Vec2(53.0f, 648.0f), new Vec2(56.0f, 25.0f), new Vec2(28.0f, 31.0f), new Vec2(22.0f, 638.0f)};
-this.createBody(new StdBoxPlatform(p1));
-
-Vec2[] p2 = {new Vec2(849.0f, 652.0f), new Vec2(819.0f, 20.0f), new Vec2(845.0f, 26.0f), new Vec2(870.0f, 651.0f)};
-this.createBody(new StdBoxPlatform(p2));
-
-Vec2[] p3 = {new Vec2(23.0f, 11.0f), new Vec2(29.0f, 35.0f), new Vec2(831.0f, 41.0f), new Vec2(809.0f, 6.0f)};
-this.createBody(new StdBoxPlatform(p3));
 
