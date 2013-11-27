@@ -8,11 +8,36 @@ import org.jbox2d.profile.*;
 
 public class Player extends StdBoxPolygon {
 
-	private float speed = 100000.0f;
+
 	private boolean wWasPressed = false;;
+	private float jumpForce;
+	private float groundForce;
+	private float airForce;
+	private float maxSpeed;
+
 
 	public Player(Vec2[] points) {
 		super(points);
+		this.jumpForce = 800000.0f;
+		this.groundForce = 1000.0f;
+		this.airForce = 1000.0f;
+		this.maxSpeed = Float.MAX_VALUE;
+	}
+
+	public void setJumpForce(float f) {
+		this.jumpForce = f;
+	}
+
+	public void setGroundForce(float f) {
+		this.groundForce = f;
+	}
+
+	public void setAirForce(float f) {
+		this.airForce = f;
+	}
+
+	public void setMaxSpeed(float f) {
+		this.maxSpeed = f;
 	}
 
 	public boolean isTouchingGround() {
@@ -20,6 +45,7 @@ public class Player extends StdBoxPolygon {
 		float lowest = points[0].y;
 		float rightest = points[0].x;
 		float leftest = points[0].x;
+
 		for (Vec2 p : points) {
 			if (p.y > lowest) {
 				lowest = p.y;
@@ -31,18 +57,22 @@ public class Player extends StdBoxPolygon {
 				leftest = p.x;
 			}
 		}
+
 		Vec2 center = getBody().getWorldCenter();
 		Body body = getBody();
 		StdBoxWorld world = (StdBoxWorld)(body.getWorld());
+
 		Vec2 groundPointCenter = new Vec2(center.x, lowest + 2.0f);
 		Vec2 groundPointLeft = new Vec2(leftest, lowest + 2.0f);
 		Vec2 groundPointRight = new Vec2(rightest, lowest + 2.0f);
+
 		StdDraw.setPenColor(StdDraw.RED);
 		StdDraw.circle(groundPointCenter.x, groundPointCenter.y, 1.0);
 		StdDraw.setPenColor(StdDraw.BLACK);
+
 		return world.pointIsInsideBody(groundPointCenter) ||
-			world.pointIsInsideBody(groundPointLeft) ||
-			world.pointIsInsideBody(groundPointRight);
+		world.pointIsInsideBody(groundPointLeft) ||
+		world.pointIsInsideBody(groundPointRight);
 	}
 
 	public void setBody(Body body) {
@@ -56,46 +86,32 @@ public class Player extends StdBoxPolygon {
 		Body body = this.getBody();
 		Vec2 linVel = body.getLinearVelocity();
 		boolean canMove = true;
-		float force = 1000.0f;
+		float force = airForce;
 		if (isTouchingGround()) {
-			force = 3000.0f;
+			force = groundForce;
 		}
-		float jump = 800000.0f;
+		float jump = jumpForce;
 		if (canMove) {
-			// if (StdDraw.isKeyPressed(83)) { // S
-			// 	if (linVel.y < speed) {
-			// 		body.applyForceToCenter(new Vec2(0.0f, force));
-			// 		if (linVel.y > speed)
-			// 			linVel.y = speed;
-			// 	}
-			// }
-			if (StdDraw.isKeyPressed(65)) { // A
-				if (linVel.x > -speed) {
+			if (StdDraw.isKeyPressed(65)) {								// A
+				if (linVel.x > -maxSpeed) {
 					body.applyForceToCenter(new Vec2(-force, 0.0f));
-					// if (linVel.x < -speed)
-						// linVel.x = -speed;
 				}
-				// System.out.println("HI");
 			}
-			if (StdDraw.isKeyPressed(87) && !wWasPressed) { // W
-				if (linVel.y > -speed && isTouchingGround()) {
+			if (StdDraw.isKeyPressed(87) && !wWasPressed) {				// W
+				if (linVel.y > -maxSpeed && isTouchingGround()) {
 					body.applyForceToCenter(new Vec2(0.0f, -jump));
-					// if (linVel.y < -jump)
-						// linVel.y = -jump;
 				}
 				wWasPressed = true;
 			}
 			if (!StdDraw.isKeyPressed(87)) {
 				wWasPressed = false;
 			}
-			if (StdDraw.isKeyPressed(68)) { //D
-				if (linVel.x < speed) {
+			if (StdDraw.isKeyPressed(68)) {								//D
+				if (linVel.x < maxSpeed) {
 					body.applyForceToCenter(new Vec2(force, 0.0f));
-					// if (linVel.x > speed) {
-						// linVel.x = speed;
-					}
 				}
 			}
+		}
 
 		super.update(delta);
 
