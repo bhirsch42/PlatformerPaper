@@ -18,10 +18,14 @@ public class Player extends StdBoxPolygon {
 
 	public Player(Vec2[] points) {
 		super(points);
-		this.jumpForce = 800000.0f;
-		this.groundForce = 1000.0f;
+		this.jumpForce = 80000.0f;
+		this.groundForce = 5000.0f;
 		this.airForce = 1000.0f;
 		this.maxSpeed = Float.MAX_VALUE;
+	}
+
+	public void setDensity(float f) {
+		getBody().getFixtureList().setDensity(f);
 	}
 
 	public void setJumpForce(float f) {
@@ -66,9 +70,9 @@ public class Player extends StdBoxPolygon {
 		Vec2 groundPointLeft = new Vec2(leftest, lowest + 2.0f);
 		Vec2 groundPointRight = new Vec2(rightest, lowest + 2.0f);
 
-		StdDraw.setPenColor(StdDraw.RED);
-		StdDraw.circle(groundPointCenter.x, groundPointCenter.y, 1.0);
-		StdDraw.setPenColor(StdDraw.BLACK);
+		// StdDraw.setPenColor(StdDraw.RED);
+		// StdDraw.circle(groundPointCenter.x, groundPointCenter.y, 1.0);
+		// StdDraw.setPenColor(StdDraw.BLACK);
 
 		return world.pointIsInsideBody(groundPointCenter) ||
 		world.pointIsInsideBody(groundPointLeft) ||

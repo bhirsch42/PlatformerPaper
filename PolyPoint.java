@@ -59,8 +59,8 @@ public class PolyPoint {
 
 	public static void main(String[] args) {
 		String pic = args[0];
-		int width = 800;
-		int height = 800;
+		int width = 900;
+		int height = 700;
 		StdDraw.setCanvasSize(width, height);
 		StdDraw.setXscale(0, width);
 		StdDraw.setYscale(height, 0);
