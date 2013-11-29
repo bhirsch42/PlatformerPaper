@@ -1,11 +1,4 @@
 ***
-Vec2[] p20 = {new Vec2(709.0f, 601.0f)};
+Vec2[] p20 = {new Vec2(248.0f, 601.0f), new Vec2(270.0f, 601.0f), new Vec2(268.0f, 642.0f), new Vec2(249.0f, 640.0f)};
 this.createBody(new StdBoxPlatform(p20));
-
-***
-Vec2[] p20 = {new Vec2(709.0f, 601.0f)};
-this.createBody(new StdBoxPlatform(p20));
-
-Vec2[] p21 = {new Vec2(136.0f, 128.0f), new Vec2(136.0f, 156.0f), new Vec2(148.0f, 156.0f), new Vec2(148.0f, 128.0f)};
-this.createBody(new StdBoxPlatform(p21));
 
