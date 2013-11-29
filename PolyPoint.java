@@ -14,6 +14,14 @@ public class PolyPoint {
 		return xList.size();
 	}
 
+	public void removeLast() {
+		if (xList.size() == 0) {
+			return;
+		}
+		xList.remove(xList.size()-1);
+		yList.remove(yList.size()-1);
+	}
+
 	public void addPoint(int x, int y) {
 		xList.add((float)x);
 		yList.add((float)y);
@@ -51,8 +59,8 @@ public class PolyPoint {
 		System.out.println("***");
 		for (int i = 0; i < polyPoints.size(); i++) {
 			PolyPoint polyPoint = polyPoints.get(i);
-			System.out.println("Vec2[] p" + (i) + " = " + polyPoint);
-			System.out.println("this.createBody(new StdBoxPlatform(p" + (i) + "));");
+			System.out.println("Vec2[] p" + (i+20) + " = " + polyPoint);
+			System.out.println("this.createBody(new StdBoxPlatform(p" + (i+20) + "));");
 			System.out.println();
 		}
 	}
@@ -104,7 +112,7 @@ public class PolyPoint {
 				keyZWasPressed = true;
 				// pressed Z key
 				if (polyPoint.size() > 0) {
-					polyPoint = new PolyPoint();
+					polyPoint.removeLast();
 				} else if (polyPoints.size() > 0) {
 					polyPoints.remove(polyPoints.size()-1);
 				}
