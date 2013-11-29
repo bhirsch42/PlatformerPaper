@@ -210,44 +210,59 @@ public class PlatformerPaper {
 		player4.setAirForce(6000.0f);
 		player4.setMaxSpeed(100.0f);
 		// level 4 platforms
-		Vec2[] p4_0 = {new Vec2(48.0f, 478.0f), new Vec2(849.0f, 478.0f), new Vec2(866.0f, 510.0f), new Vec2(37.0f, 508.0f)};
-		level4.createBody(new StdBoxPlatform(p4_0));
+		Vec2[] p4_20 = {new Vec2(50.0f, 517.0f), new Vec2(49.0f, 152.0f), new Vec2(39.0f, 133.0f), new Vec2(34.0f, 527.0f)};
+		level4.createBody(new StdBoxPlatform(p4_20));
 
-		Vec2[] p4_1 = {new Vec2(50.0f, 481.0f), new Vec2(51.0f, 43.0f), new Vec2(36.0f, 46.0f), new Vec2(44.0f, 501.0f)};
-		level4.createBody(new StdBoxPlatform(p4_1));
+		Vec2[] p4_21 = {new Vec2(49.0f, 478.0f), new Vec2(861.0f, 478.0f), new Vec2(877.0f, 528.0f), new Vec2(37.0f, 518.0f)};
+		level4.createBody(new StdBoxPlatform(p4_21));
 
-		Vec2[] p4_2 = {new Vec2(850.0f, 504.0f), new Vec2(848.0f, 34.0f), new Vec2(865.0f, 35.0f), new Vec2(860.0f, 504.0f)};
-		level4.createBody(new StdBoxPlatform(p4_2));
+		Vec2[] p4_22 = {new Vec2(97.0f, 451.0f), new Vec2(98.0f, 480.0f), new Vec2(136.0f, 480.0f), new Vec2(136.0f, 447.0f)};
+		level4.createBody(new StdBoxPlatform(p4_22));
 
-		Vec2[] p4_3 = {new Vec2(48.0f, 49.0f), new Vec2(851.0f, 40.0f), new Vec2(821.0f, 16.0f), new Vec2(61.0f, 22.0f)};
-		level4.createBody(new StdBoxPlatform(p4_3));
+		Vec2[] p4_23 = {new Vec2(94.0f, 451.0f), new Vec2(94.0f, 432.0f), new Vec2(138.0f, 431.0f), new Vec2(138.0f, 451.0f)};
+		level4.createBody(new StdBoxPlatform(p4_23));
 
-		Vec2[] p4_4 = {new Vec2(96.0f, 485.0f), new Vec2(97.0f, 452.0f), new Vec2(135.0f, 451.0f), new Vec2(136.0f, 486.0f)};
-		level4.createBody(new StdBoxPlatform(p4_4));
+		Vec2[] p4_24 = {new Vec2(139.0f, 477.0f), new Vec2(140.0f, 455.0f), new Vec2(163.0f, 453.0f)};
+		level4.createBody(new StdBoxPlatform(p4_24));
 
-		Vec2[] p4_5 = {new Vec2(94.0f, 432.0f), new Vec2(139.0f, 432.0f), new Vec2(139.0f, 450.0f), new Vec2(94.0f, 451.0f)};
-		level4.createBody(new StdBoxPlatform(p4_5));
+		Vec2[] p4_25 = {new Vec2(163.0f, 453.0f), new Vec2(162.0f, 431.0f), new Vec2(187.0f, 430.0f)};
+		level4.createBody(new StdBoxPlatform(p4_25));
 
-		Vec2[] p4_6 = {new Vec2(140.0f, 454.0f), new Vec2(162.0f, 454.0f), new Vec2(163.0f, 430.0f), new Vec2(185.0f, 430.0f), new Vec2(185.0f, 482.0f), new Vec2(139.0f, 479.0f)};
-		level4.createBody(new StdBoxPlatform(p4_6));
+		Vec2[] p4_26 = {new Vec2(187.0f, 430.0f), new Vec2(186.0f, 407.0f), new Vec2(209.0f, 407.0f)};
+		level4.createBody(new StdBoxPlatform(p4_26));
 
-		Vec2[] p4_7 = {new Vec2(185.0f, 480.0f), new Vec2(185.0f, 407.0f), new Vec2(209.0f, 407.0f), new Vec2(209.0f, 384.0f), new Vec2(232.0f, 384.0f), new Vec2(232.0f, 497.0f)};
-		level4.createBody(new StdBoxPlatform(p4_7));
+		Vec2[] p4_27 = {new Vec2(209.0f, 407.0f), new Vec2(210.0f, 385.0f), new Vec2(233.0f, 384.0f)};
+		level4.createBody(new StdBoxPlatform(p4_27));
 
-		Vec2[] p4_8 = {new Vec2(232.0f, 480.0f), new Vec2(232.0f, 360.0f), new Vec2(255.0f, 360.0f), new Vec2(255.0f, 337.0f), new Vec2(278.0f, 337.0f), new Vec2(280.0f, 489.0f)};
-		level4.createBody(new StdBoxPlatform(p4_8));
+		Vec2[] p4_28 = {new Vec2(233.0f, 384.0f), new Vec2(233.0f, 361.0f), new Vec2(256.0f, 361.0f)};
+		level4.createBody(new StdBoxPlatform(p4_28));
 
-		Vec2[] p4_9 = {new Vec2(278.0f, 477.0f), new Vec2(278.0f, 313.0f), new Vec2(302.0f, 313.0f), new Vec2(301.0f, 290.0f), new Vec2(349.0f, 290.0f), new Vec2(349.0f, 493.0f)};
-		level4.createBody(new StdBoxPlatform(p4_9));
+		Vec2[] p4_29 = {new Vec2(256.0f, 361.0f), new Vec2(255.0f, 337.0f), new Vec2(278.0f, 337.0f)};
+		level4.createBody(new StdBoxPlatform(p4_29));
 
-		Vec2[] p4_10 = {new Vec2(536.0f, 483.0f), new Vec2(535.0f, 453.0f), new Vec2(559.0f, 453.0f), new Vec2(559.0f, 483.0f)};
-		level4.createBody(new StdBoxPlatform(p4_10));
+		Vec2[] p4_30 = {new Vec2(278.0f, 337.0f), new Vec2(279.0f, 314.0f), new Vec2(303.0f, 313.0f)};
+		level4.createBody(new StdBoxPlatform(p4_30));
 
-		Vec2[] p4_11 = {new Vec2(651.0f, 409.0f), new Vec2(651.0f, 360.0f), new Vec2(722.0f, 360.0f), new Vec2(721.0f, 415.0f)};
-		level4.createBody(new StdBoxPlatform(p4_11));
+		Vec2[] p4_31 = {new Vec2(303.0f, 313.0f), new Vec2(303.0f, 291.0f), new Vec2(348.0f, 291.0f)};
+		level4.createBody(new StdBoxPlatform(p4_31));
 
-		Vec2[] p4_12 = {new Vec2(628.0f, 407.0f), new Vec2(744.0f, 407.0f), new Vec2(744.0f, 428.0f), new Vec2(629.0f, 427.0f)};
-		level4.createBody(new StdBoxPlatform(p4_12));
+		Vec2[] p4_32 = {new Vec2(346.0f, 291.0f), new Vec2(349.0f, 480.0f), new Vec2(328.0f, 390.0f)};
+		level4.createBody(new StdBoxPlatform(p4_32));
+
+		Vec2[] p4_33 = {new Vec2(535.0f, 454.0f), new Vec2(535.0f, 481.0f), new Vec2(559.0f, 490.0f), new Vec2(557.0f, 455.0f)};
+		level4.createBody(new StdBoxPlatform(p4_33));
+
+		Vec2[] p4_34 = {new Vec2(651.0f, 361.0f), new Vec2(722.0f, 362.0f), new Vec2(722.0f, 416.0f), new Vec2(652.0f, 418.0f)};
+		level4.createBody(new StdBoxPlatform(p4_34));
+
+		Vec2[] p4_35 = {new Vec2(628.0f, 408.0f), new Vec2(745.0f, 409.0f), new Vec2(743.0f, 428.0f), new Vec2(629.0f, 430.0f)};
+		level4.createBody(new StdBoxPlatform(p4_35));
+
+		Vec2[] p4_36 = {new Vec2(45.0f, 186.0f), new Vec2(852.0f, 187.0f), new Vec2(862.0f, 154.0f), new Vec2(45.0f, 166.0f)};
+		level4.createBody(new StdBoxPlatform(p4_36));
+
+		Vec2[] p4_37 = {new Vec2(848.0f, 182.0f), new Vec2(851.0f, 518.0f), new Vec2(861.0f, 512.0f), new Vec2(875.0f, 196.0f)};
+		level4.createBody(new StdBoxPlatform(p4_37));
 
 
 		// level 4 stars
@@ -563,7 +578,7 @@ public class PlatformerPaper {
 		level8.addStar(new Vec2(542.0f, 430.0f), "level_8_3.png");
 		level8.addStar(new Vec2(252.0f, 305.0f), "level_8_4.png");
 		level8.addStar(new Vec2(539.0f, 186.0f), "level_8_5.png");
-		level8.addStar(new Vec2(245.0f, 119.0f), "level_8_6.png");		// level8.addStar()
+		level8.addStar(new Vec2(245.0f, 119.0f), "level_8_6.png");
 
 		// level 8 colors
 		level8.setBackgroundColor(StdDraw.BLACK);
@@ -571,6 +586,301 @@ public class PlatformerPaper {
 		level8.setPlayerColor(StdDraw.RED);
 		levels.add(level8);
 
+		// ##       ######## ##     ## ######## ##           #######  
+		// ##       ##       ##     ## ##       ##          ##     ## 
+		// ##       ##       ##     ## ##       ##          ##     ## 
+		// ##       ######   ##     ## ######   ##           ######## 
+		// ##       ##        ##   ##  ##       ##                 ## 
+		// ##       ##         ## ##   ##       ##          ##     ## 
+		// ######## ########    ###    ######## ########     #######  
+		Vec2[] player9Points = {new Vec2(115.0f, 522.0f), new Vec2(115.0f, 488.0f), new Vec2(133.0f, 488.0f), new Vec2(133.0f, 522.0f)};
+		Player player9 = new Player(player9Points);
+		Level level9 = new Level(player9);
+		player9.setJumpForce(9000000.0f);
+		player9.setGroundForce(30000.0f);
+		player9.setAirForce(9000.0f);
+		player9.setMaxSpeed(100.0f);
+		// level 9 platforms
+		Vec2[] p9_20 = {new Vec2(73.0f, 244.0f), new Vec2(74.0f, 530.0f), new Vec2(0.0f, 601.0f), new Vec2(7.0f, 184.0f)};
+		level9.createBody(new StdBoxPlatform(p9_20));
+
+		Vec2[] p9_21 = {new Vec2(58.0f, 537.0f), new Vec2(870.0f, 539.0f), new Vec2(893.0f, 598.0f), new Vec2(2.0f, 592.0f)};
+		level9.createBody(new StdBoxPlatform(p9_21));
+
+		Vec2[] p9_22 = {new Vec2(855.0f, 544.0f), new Vec2(835.0f, 191.0f), new Vec2(868.0f, 192.0f), new Vec2(870.0f, 584.0f)};
+		level9.createBody(new StdBoxPlatform(p9_22));
+
+		Vec2[] p9_23 = {new Vec2(64.0f, 247.0f), new Vec2(851.0f, 222.0f), new Vec2(852.0f, 119.0f), new Vec2(77.0f, 166.0f)};
+		level9.createBody(new StdBoxPlatform(p9_23));
+
+		// level 9 stars
+		level9.addStar(new Vec2(254.0f, 510.0f), "level_9_1.png");
+		level9.addStar(new Vec2(417.0f, 490.0f), "level_9_2.png");
+		level9.addStar(new Vec2(595.0f, 509.0f), "level_9_3.png");
+
+		// level 9 colors
+		level9.setBackgroundColor(StdDraw.BLACK);
+		// level9.setShowPlatforms(true);
+		level9.setPlayerColor(StdDraw.RED);
+		levels.add(level9);
+
+		// ##       ######## ##     ## ######## ##             ##     #####   
+		// ##       ##       ##     ## ##       ##           ####    ##   ##  
+		// ##       ##       ##     ## ##       ##             ##   ##     ## 
+		// ##       ######   ##     ## ######   ##             ##   ##     ## 
+		// ##       ##        ##   ##  ##       ##             ##   ##     ## 
+		// ##       ##         ## ##   ##       ##             ##    ##   ##  
+		// ######## ########    ###    ######## ########     ######   #####   
+		Vec2[] player10Points = {new Vec2(61.0f, 461.0f), new Vec2(61.0f, 431.0f), new Vec2(76.0f, 431.0f), new Vec2(76.0f, 461.0f)};
+		Player player10 = new Player(player10Points);
+		Level level10 = new Level(player10);
+		player10.setJumpForce(10000000.0f);
+		player10.setGroundForce(30000.0f);
+		player10.setAirForce(10000.0f);
+		player10.setMaxSpeed(100.0f);
+		// level 10 platforms
+		Vec2[] p10_20 = {new Vec2(8.0f, 121.0f), new Vec2(17.0f, 585.0f), new Vec2(2.0f, 583.0f), new Vec2(0.0f, 112.0f)};
+		level10.createBody(new StdBoxPlatform(p10_20));
+
+		Vec2[] p10_21 = {new Vec2(896.0f, 120.0f), new Vec2(896.0f, 580.0f), new Vec2(885.0f, 578.0f), new Vec2(890.0f, 119.0f)};
+		level10.createBody(new StdBoxPlatform(p10_21));
+
+		Vec2[] p10_22 = {new Vec2(12.0f, 467.0f), new Vec2(887.0f, 456.0f), new Vec2(888.0f, 580.0f), new Vec2(13.0f, 582.0f)};
+		level10.createBody(new StdBoxPlatform(p10_22));
+
+		Vec2[] p10_23 = {new Vec2(1.0f, 147.0f), new Vec2(894.0f, 149.0f), new Vec2(861.0f, 111.0f), new Vec2(63.0f, 114.0f)};
+		level10.createBody(new StdBoxPlatform(p10_23));
+
+		Vec2[] p10_24 = {new Vec2(391.0f, 432.0f), new Vec2(411.0f, 432.0f), new Vec2(411.0f, 462.0f), new Vec2(391.0f, 461.0f)};
+		level10.createBody(new StdBoxPlatform(p10_24));
+
+		// level 10 stars
+		level10.addStar(new Vec2(399.0f, 407.0f), "level_10_1.png");
+		level10.addStar(new Vec2(667.0f, 443.0f), "level_10_2.png");
+
+		// level 10 colors
+		level10.setBackgroundColor(StdDraw.BLACK);
+		// level10.setShowPlatforms(true);
+		level10.setPlayerColor(StdDraw.RED);
+		levels.add(level10);
+
+		// ##       ######## ##     ## ######## ##             ##      ##   
+		// ##       ##       ##     ## ##       ##           ####    ####   
+		// ##       ##       ##     ## ##       ##             ##      ##   
+		// ##       ######   ##     ## ######   ##             ##      ##   
+		// ##       ##        ##   ##  ##       ##             ##      ##   
+		// ##       ##         ## ##   ##       ##             ##      ##   
+		// ######## ########    ###    ######## ########     ######  ######
+		Vec2[] player11Points = {new Vec2(61.0f, 461.0f), new Vec2(61.0f, 431.0f), new Vec2(76.0f, 431.0f), new Vec2(76.0f, 461.0f)};
+		Player player11 = new Player(player11Points);
+		Level level11 = new Level(player11);
+		player11.setJumpForce(11000000.0f);
+		player11.setGroundForce(30000.0f);
+		player11.setAirForce(11000.0f);
+		player11.setMaxSpeed(110.0f);
+		// level 11 platforms
+		Vec2[] p11_20 = {new Vec2(8.0f, 92.0f), new Vec2(6.0f, 611.0f), new Vec2(3.0f, 612.0f), new Vec2(1.0f, 90.0f)};
+		level11.createBody(new StdBoxPlatform(p11_20));
+
+		Vec2[] p11_21 = {new Vec2(8.0f, 440.0f), new Vec2(65.0f, 451.0f), new Vec2(248.0f, 541.0f), new Vec2(71.0f, 553.0f)};
+		level11.createBody(new StdBoxPlatform(p11_21));
+
+		Vec2[] p11_22 = {new Vec2(248.0f, 541.0f), new Vec2(248.0f, 540.0f), new Vec2(317.0f, 580.0f), new Vec2(413.0f, 543.0f)};
+		level11.createBody(new StdBoxPlatform(p11_22));
+
+		Vec2[] p11_23 = {new Vec2(413.0f, 543.0f), new Vec2(501.0f, 587.0f), new Vec2(568.0f, 537.0f)};
+		level11.createBody(new StdBoxPlatform(p11_23));
+
+		Vec2[] p11_24 = {new Vec2(567.0f, 536.0f), new Vec2(594.0f, 573.0f), new Vec2(623.0f, 541.0f)};
+		level11.createBody(new StdBoxPlatform(p11_24));
+
+		Vec2[] p11_25 = {new Vec2(623.0f, 541.0f), new Vec2(652.0f, 573.0f), new Vec2(659.0f, 541.0f)};
+		level11.createBody(new StdBoxPlatform(p11_25));
+
+		Vec2[] p11_26 = {new Vec2(659.0f, 541.0f), new Vec2(697.0f, 577.0f), new Vec2(696.0f, 536.0f)};
+		level11.createBody(new StdBoxPlatform(p11_26));
+
+		Vec2[] p11_27 = {new Vec2(696.0f, 536.0f), new Vec2(727.0f, 565.0f), new Vec2(730.0f, 525.0f)};
+		level11.createBody(new StdBoxPlatform(p11_27));
+
+		Vec2[] p11_28 = {new Vec2(731.0f, 526.0f), new Vec2(767.0f, 555.0f), new Vec2(766.0f, 510.0f)};
+		level11.createBody(new StdBoxPlatform(p11_28));
+
+		Vec2[] p11_29 = {new Vec2(766.0f, 510.0f), new Vec2(790.0f, 489.0f), new Vec2(795.0f, 517.0f)};
+		level11.createBody(new StdBoxPlatform(p11_29));
+
+		Vec2[] p11_30 = {new Vec2(790.0f, 489.0f), new Vec2(809.0f, 492.0f), new Vec2(801.0f, 503.0f)};
+		level11.createBody(new StdBoxPlatform(p11_30));
+
+		Vec2[] p11_31 = {new Vec2(809.0f, 491.0f), new Vec2(824.0f, 478.0f), new Vec2(846.0f, 470.0f), new Vec2(834.0f, 495.0f)};
+		level11.createBody(new StdBoxPlatform(p11_31));
+
+		Vec2[] p11_32 = {new Vec2(849.0f, 468.0f), new Vec2(854.0f, 459.0f), new Vec2(873.0f, 449.0f), new Vec2(869.0f, 474.0f)};
+		level11.createBody(new StdBoxPlatform(p11_32));
+
+		Vec2[] p11_33 = {new Vec2(867.0f, 326.0f), new Vec2(867.0f, 452.0f), new Vec2(884.0f, 449.0f), new Vec2(887.0f, 257.0f)};
+		level11.createBody(new StdBoxPlatform(p11_33));
+
+		Vec2[] p11_34 = {new Vec2(881.0f, 294.0f), new Vec2(755.0f, 250.0f), new Vec2(673.0f, 117.0f), new Vec2(850.0f, 136.0f)};
+		level11.createBody(new StdBoxPlatform(p11_34));
+
+		Vec2[] p11_35 = {new Vec2(683.0f, 123.0f), new Vec2(299.0f, 123.0f), new Vec2(500.0f, 58.0f)};
+		level11.createBody(new StdBoxPlatform(p11_35));
+
+		Vec2[] p11_36 = {new Vec2(297.0f, 123.0f), new Vec2(211.0f, 177.0f), new Vec2(225.0f, 109.0f)};
+		level11.createBody(new StdBoxPlatform(p11_36));
+
+		Vec2[] p11_37 = {new Vec2(217.0f, 167.0f), new Vec2(138.0f, 288.0f), new Vec2(7.0f, 267.0f), new Vec2(84.0f, 140.0f)};
+		level11.createBody(new StdBoxPlatform(p11_37));
+
+		// level 11 stars
+		level11.addStar(new Vec2(691.0f, 512.0f), "level_11_1.png");
+		level11.addStar(new Vec2(276.0f, 507.0f), "level_11_2.png");
+
+		// level 11 colors
+		level11.setBackgroundColor(StdDraw.BLACK);
+		// level11.setShowPlatforms(true);
+		level11.setPlayerColor(StdDraw.RED);
+		levels.add(level11);
+
+		// ##       ######## ##     ## ######## ##             ##    #######  
+		// ##       ##       ##     ## ##       ##           ####   ##     ## 
+		// ##       ##       ##     ## ##       ##             ##          ## 
+		// ##       ######   ##     ## ######   ##             ##    #######  
+		// ##       ##        ##   ##  ##       ##             ##   ##        
+		// ##       ##         ## ##   ##       ##             ##   ##        
+		// ######## ########    ###    ######## ########     ###### #########
+		Vec2[] player12Points = {new Vec2(300.0f, 663.0f), new Vec2(300.0f, 663.0f), new Vec2(316.0f, 663.0f), new Vec2(316.0f, 634.0f), new Vec2(300.0f, 634.0f)};
+		Player player12 = new Player(player12Points);
+		Level level12 = new Level(player12);
+		player12.setJumpForce(12000000.0f);
+		player12.setGroundForce(20000.0f);
+		player12.setAirForce(12000.0f);
+		player12.setMaxSpeed(120.0f);
+
+		// level 12 platforms
+		Vec2[] p12_20 = {new Vec2(184.0f, 692.0f), new Vec2(715.0f, 693.0f), new Vec2(718.0f, 696.0f), new Vec2(181.0f, 695.0f)};
+		level12.createBody(new StdBoxPlatform(p12_20));
+
+		Vec2[] p12_21 = {new Vec2(187.0f, 692.0f), new Vec2(188.0f, 1.0f), new Vec2(119.0f, 34.0f), new Vec2(149.0f, 696.0f)};
+		level12.createBody(new StdBoxPlatform(p12_21));
+
+		Vec2[] p12_22 = {new Vec2(713.0f, 694.0f), new Vec2(712.0f, 0.0f), new Vec2(818.0f, 119.0f), new Vec2(812.0f, 551.0f)};
+		level12.createBody(new StdBoxPlatform(p12_22));
+
+		Vec2[] p12_23 = {new Vec2(280.0f, 668.0f), new Vec2(279.0f, 680.0f), new Vec2(336.0f, 679.0f), new Vec2(336.0f, 668.0f)};
+		level12.createBody(new StdBoxPlatform(p12_23));
+
+		Vec2[] p12_24 = {new Vec2(579.0f, 662.0f), new Vec2(578.0f, 671.0f), new Vec2(632.0f, 673.0f), new Vec2(632.0f, 663.0f)};
+		level12.createBody(new StdBoxPlatform(p12_24));
+
+		Vec2[] p12_25 = {new Vec2(418.0f, 630.0f), new Vec2(418.0f, 639.0f), new Vec2(472.0f, 640.0f), new Vec2(472.0f, 628.0f)};
+		level12.createBody(new StdBoxPlatform(p12_25));
+
+		Vec2[] p12_26 = {new Vec2(522.0f, 558.0f), new Vec2(593.0f, 559.0f), new Vec2(592.0f, 596.0f), new Vec2(521.0f, 597.0f)};
+		level12.createBody(new StdBoxPlatform(p12_26));
+
+		Vec2[] p12_27 = {new Vec2(512.0f, 461.0f), new Vec2(566.0f, 462.0f), new Vec2(565.0f, 470.0f), new Vec2(513.0f, 471.0f)};
+		level12.createBody(new StdBoxPlatform(p12_27));
+
+		Vec2[] p12_28 = {new Vec2(287.0f, 501.0f), new Vec2(340.0f, 502.0f), new Vec2(333.0f, 512.0f), new Vec2(288.0f, 514.0f)};
+		level12.createBody(new StdBoxPlatform(p12_28));
+
+		Vec2[] p12_29 = {new Vec2(391.0f, 455.0f), new Vec2(427.0f, 456.0f), new Vec2(430.0f, 497.0f), new Vec2(387.0f, 495.0f)};
+		level12.createBody(new StdBoxPlatform(p12_29));
+
+		Vec2[] p12_30 = {new Vec2(308.0f, 411.0f), new Vec2(360.0f, 411.0f), new Vec2(357.0f, 422.0f), new Vec2(312.0f, 422.0f)};
+		level12.createBody(new StdBoxPlatform(p12_30));
+
+		Vec2[] p12_31 = {new Vec2(615.0f, 334.0f), new Vec2(641.0f, 337.0f), new Vec2(637.0f, 369.0f), new Vec2(615.0f, 368.0f)};
+		level12.createBody(new StdBoxPlatform(p12_31));
+
+		Vec2[] p12_32 = {new Vec2(573.0f, 270.0f), new Vec2(623.0f, 271.0f), new Vec2(620.0f, 281.0f), new Vec2(576.0f, 283.0f)};
+		level12.createBody(new StdBoxPlatform(p12_32));
+
+		Vec2[] p12_33 = {new Vec2(401.0f, 296.0f), new Vec2(447.0f, 298.0f), new Vec2(444.0f, 309.0f), new Vec2(403.0f, 310.0f)};
+		level12.createBody(new StdBoxPlatform(p12_33));
+
+		Vec2[] p12_34 = {new Vec2(269.0f, 227.0f), new Vec2(314.0f, 228.0f), new Vec2(306.0f, 241.0f), new Vec2(266.0f, 241.0f)};
+		level12.createBody(new StdBoxPlatform(p12_34));
+
+		Vec2[] p12_35 = {new Vec2(314.0f, 69.0f), new Vec2(359.0f, 69.0f), new Vec2(356.0f, 80.0f), new Vec2(312.0f, 80.0f)};
+		level12.createBody(new StdBoxPlatform(p12_35));
+
+		Vec2[] p12_36 = {new Vec2(548.0f, 169.0f), new Vec2(592.0f, 170.0f), new Vec2(589.0f, 180.0f), new Vec2(545.0f, 181.0f)};
+		level12.createBody(new StdBoxPlatform(p12_36));
+
+		Vec2[] p12_37 = {new Vec2(531.0f, 77.0f), new Vec2(550.0f, 70.0f), new Vec2(572.0f, 57.0f), new Vec2(584.0f, 64.0f), new Vec2(607.0f, 75.0f), new Vec2(567.0f, 84.0f)};
+		level12.createBody(new StdBoxPlatform(p12_37));
+
+		Vec2[] p12_38 = {new Vec2(184.0f, 34.0f), new Vec2(716.0f, 33.0f), new Vec2(714.0f, 10.0f), new Vec2(184.0f, 11.0f)};
+		level12.createBody(new StdBoxPlatform(p12_38));
+
+
+		// level 12 stars
+		level12.addStar(new Vec2(425.0f, 282.0f), "level_12_1.png");
+
+		// level 12 colors
+		level12.setBackgroundColor(StdDraw.BLACK);
+		// level12.setShowPlatforms(true);
+		level12.setPlayerColor(StdDraw.RED);
+		levels.add(level12);
+
+		// ##       ######## ##     ## ######## ##             ##    #######  
+		// ##       ##       ##     ## ##       ##           ####   ##     ## 
+		// ##       ##       ##     ## ##       ##             ##          ## 
+		// ##       ######   ##     ## ######   ##             ##    #######  
+		// ##       ##        ##   ##  ##       ##             ##          ## 
+		// ##       ##         ## ##   ##       ##             ##   ##     ## 
+		// ######## ########    ###    ######## ########     ######  #######  
+		Vec2[] player13Points = {new Vec2(68.0f, 544.0f), new Vec2(68.0f, 492.0f), new Vec2(90.0f, 492.0f), new Vec2(90.0f, 544.0f)};
+		Player player13 = new Player(player13Points);
+		Level level13 = new Level(player13);
+		player13.setJumpForce(10000000.0f);
+		player13.setGroundForce(30000.0f);
+		player13.setAirForce(13000.0f);
+		player13.setMaxSpeed(130.0f);
+
+		// level 13 platforms
+		Vec2[] p13_20 = {new Vec2(49.0f, 552.0f), new Vec2(46.0f, 7.0f), new Vec2(18.0f, 7.0f), new Vec2(18.0f, 660.0f)};
+		level13.createBody(new StdBoxPlatform(p13_20));
+
+		Vec2[] p13_21 = {new Vec2(49.0f, 552.0f), new Vec2(177.0f, 584.0f), new Vec2(308.0f, 552.0f)};
+		level13.createBody(new StdBoxPlatform(p13_21));
+
+		Vec2[] p13_22 = {new Vec2(308.0f, 552.0f), new Vec2(308.0f, 478.0f), new Vec2(380.0f, 478.0f)};
+		level13.createBody(new StdBoxPlatform(p13_22));
+
+		Vec2[] p13_23 = {new Vec2(380.0f, 478.0f), new Vec2(381.0f, 421.0f), new Vec2(449.0f, 421.0f)};
+		level13.createBody(new StdBoxPlatform(p13_23));
+
+		Vec2[] p13_24 = {new Vec2(449.0f, 421.0f), new Vec2(450.0f, 334.0f), new Vec2(530.0f, 333.0f)};
+		level13.createBody(new StdBoxPlatform(p13_24));
+
+		Vec2[] p13_25 = {new Vec2(530.0f, 333.0f), new Vec2(531.0f, 243.0f), new Vec2(609.0f, 242.0f)};
+		level13.createBody(new StdBoxPlatform(p13_25));
+
+		Vec2[] p13_26 = {new Vec2(609.0f, 242.0f), new Vec2(610.0f, 168.0f), new Vec2(692.0f, 168.0f)};
+		level13.createBody(new StdBoxPlatform(p13_26));
+
+		Vec2[] p13_27 = {new Vec2(692.0f, 168.0f), new Vec2(692.0f, 48.0f), new Vec2(730.0f, 108.0f)};
+		level13.createBody(new StdBoxPlatform(p13_27));
+
+		Vec2[] p13_28 = {new Vec2(852.0f, 50.0f), new Vec2(48.0f, 58.0f), new Vec2(49.0f, 21.0f), new Vec2(830.0f, 23.0f)};
+		level13.createBody(new StdBoxPlatform(p13_28));
+
+		// level 13 stars
+		level13.addStar(new Vec2(292.0f, 518.0f), "level_13_1.png");
+		level13.addStar(new Vec2(366.0f, 452.0f), "level_13_2.png");
+		level13.addStar(new Vec2(440.0f, 391.0f), "level_13_3.png");
+		level13.addStar(new Vec2(521.0f, 312.0f), "level_13_4.png");
+		level13.addStar(new Vec2(597.0f, 223.0f), "level_13_5.png");
+		level13.addStar(new Vec2(676.0f, 148.0f), "level_13_6.png");
+		// level 13 colors
+		level13.setBackgroundColor(StdDraw.BLACK);
+		// level13.setShowPlatforms(true);
+		level13.setPlayerColor(StdDraw.RED);
+		levels.add(level13);
 
 	}
 
